@@ -1,10 +1,12 @@
-// === Main Entry Sass File ===
+/*Imports for Costumizing and Bootstrap Components*/
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
 
-// Import Global Variables
-@import 'AllVariables';
+/*Costumizing my_Vars & my_Fts*/
 
-// Auto-import everything inside modules folder
-@import 'modules/*';
-
-// Import Any Additional Aggregation
-@import 'AllModules';
+/*Imports for basic SASS linking*/
+@import "./AllVariables";
+@import "./AllFunctions";
+@import "AllModules";
