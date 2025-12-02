@@ -12140,7 +12140,7 @@ html {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background: rgba(0, 0, 0, 0.78);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -12152,10 +12152,9 @@ nav {
   left: 0;
   width: 100%;
   z-index: 999;
+  padding: 0 40px;
 }
-
-.logo h1, .logo .h1 {
-  padding-left: 5px;
+nav .logo h1, nav .logo .h1 {
   font-family: "Pacifico", cursive;
   font-size: 48px;
   font-weight: 400;
@@ -12163,90 +12162,114 @@ nav {
   letter-spacing: 1px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
-
-.links {
+nav .links {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
-
-.links a {
+nav .links a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-size: 14px;
   transition: 0.3s;
 }
-
-.links a:hover {
-  color: rgb(255, 176, 59);
+nav .links a:hover {
+  color: #ffc107;
 }
-
-.home {
-  color: rgb(255, 176, 59) !important;
+nav .links a.home {
+  color: #ffc107 !important;
 }
-
-#dropdown {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-}
-
-#dropdown i {
-  color: rgb(84, 84, 84);
-  font-size: 8px;
-}
-
-.dropdown-container {
+nav .dropdown-container {
   position: relative;
   display: flex;
   align-items: center;
   gap: 5px;
   cursor: pointer;
 }
-
-.dropdown-menu {
+nav .dropdown-container i {
+  color: #545454;
+  font-size: 8px;
+}
+nav .dropdown-container .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: white;
-  border: 1px solid #ccc;
+  min-width: 150px;
   display: flex;
   flex-direction: column;
-  min-width: 150px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   opacity: 0;
   pointer-events: none;
   transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  z-index: 999;
+  z-index: 1000;
 }
-
-.dropdown-menu a {
+nav .dropdown-container .dropdown-menu a {
   padding: 10px 15px;
   color: #545454;
-  text-decoration: none;
   font-size: 14px;
-  transition: background 0.3s, color 0.3s;
+  transition: 0.3s;
 }
-
-.dropdown-menu a:hover {
-  background-color: rgb(255, 176, 59);
-  color: white;
+nav .dropdown-container .dropdown-menu a:hover {
+  background: #ffc107;
+  color: #fff;
 }
-
-.dropdown-container:hover .dropdown-menu,
-.dropdown-container:focus-within .dropdown-menu {
+nav .dropdown-container:hover .dropdown-menu, nav .dropdown-container:focus-within .dropdown-menu {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
 }
-
-#menu-toggle {
+nav #menu-toggle {
+  display: none;
+}
+nav .menu-icon {
   display: none;
 }
 
+@media (max-width: 900px) {
+  nav {
+    padding: 0 20px;
+  }
+  nav .links {
+    position: fixed;
+    top: 95px;
+    right: 0;
+    width: 250px;
+    height: calc(100vh - 95px);
+    background: rgba(0, 0, 0, 0.78);
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 40px;
+    transform: translateX(100%);
+    transition: 0.4s;
+  }
+  nav #menu-toggle:checked ~ .links {
+    transform: translateX(0);
+  }
+  nav .menu-icon {
+    display: block;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+  nav .menu-icon i:last-child {
+    display: none;
+  }
+  nav #menu-toggle:checked + .menu-icon i:first-child {
+    display: none;
+  }
+  nav #menu-toggle:checked + .menu-icon i:last-child {
+    display: inline-block;
+  }
+}
 .carousel-inner {
   height: 100vh;
+}
+.carousel-inner .carousel-item img {
+  filter: brightness(50%);
 }
 .carousel-inner .carousel-item .carousel-caption {
   top: 50%;
@@ -12267,6 +12290,9 @@ nav {
 .carousel-inner .carousel-item .carousel-caption h1 span, .carousel-inner .carousel-item .carousel-caption .h1 span {
   color: rgb(255, 176, 59);
 }
+.carousel-inner .carousel-item .carousel-caption p {
+  font-weight: 500;
+}
 .carousel-inner .carousel-item .carousel-caption .hero-links {
   display: flex;
   align-items: center;
@@ -12279,6 +12305,122 @@ nav {
   border: rgb(255, 176, 59) 2px solid;
   padding: 8px 25px;
   border-radius: 20px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+.carousel-inner .carousel-item .carousel-caption .hero-links a:hover {
+  background-color: rgb(255, 176, 59);
+}
+
+.mid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 50px 80px;
+  align-items: center;
+  background-color: rgb(255, 250, 242);
+}
+.mid .left img {
+  width: 640px;
+}
+.mid .right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.mid .right .top-text h3, .mid .right .top-text .h3 {
+  font-family: "Pacifico";
+  font-weight: 400;
+  color: #4c4c4c;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.mid .right .mid-text div {
+  display: flex;
+  align-items: none;
+  justify-content: none;
+  gap: 10px;
+}
+.mid .right .mid-text div i {
+  color: rgb(255, 176, 59);
+  font-size: 20px;
+}
+
+.why-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.why-us .top-why {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  padding-top: 70px;
+}
+.why-us .top-why a {
+  background-color: rgb(255, 247, 235);
+  color: rgb(255, 176, 59);
+  text-decoration: none;
+  padding: 7px 30px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: default;
+}
+.why-us .top-why h2, .why-us .top-why .h2 {
+  font-weight: 400;
+  color: black;
+  letter-spacing: 1;
+  font-family: "Pacifico";
+}
+.why-us .top-why h2 span, .why-us .top-why .h2 span {
+  color: rgb(255, 176, 59);
+}
+.why-us .bottom-why {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 100px;
+  column-gap: 15px;
+}
+.why-us .bottom-why .lil-containers {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+  flex-direction: column;
+  background-color: rgb(250, 250, 250);
+  height: 300px;
+  padding: 25px;
+  transition: 0.3s;
+}
+.why-us .bottom-why .lil-containers h2, .why-us .bottom-why .lil-containers .h2 {
+  color: rgb(255, 176, 59);
+  transition: 0.5s;
+}
+.why-us .bottom-why .lil-containers:hover h2, .why-us .bottom-why .lil-containers:hover .h2 {
+  color: white;
+}
+.why-us .bottom-why .lil-containers .para-container {
+  font-weight: 500;
+  color: black;
+  letter-spacing: 1;
+  font-family: "Pacifico";
+  font-size: 24px;
+  transition: 0.5s;
+}
+.why-us .bottom-why .lil-containers .random-para {
+  color: rgb(90, 90, 90);
+  transition: 0.5s;
+}
+.why-us .bottom-why .lil-containers:hover {
+  background-color: rgb(255, 176, 59);
+  padding-bottom: 50px;
+}
+.why-us .bottom-why .lil-containers:hover .random-para, .why-us .bottom-why .lil-containers:hover .para-container {
+  color: white;
 }
 
 /*# sourceMappingURL=app.css.map */

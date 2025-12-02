@@ -1,0 +1,33 @@
+.mid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 50px 80px;
+  align-items: center;
+  background-color: rgb(255, 250, 242);
+  .left {
+    img {
+      width: 640px;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .top-text {
+      h3 {
+        font-family: "Pacifico";
+        font-weight: 400;
+        color: #4c4c4c;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+    }
+    .mid-text div{
+        @include MyDisplay(flex,none,none,10px);
+        i{
+            color: $my_yellow;
+            font-size: 20px;
+        }
+    }
+  }
+}

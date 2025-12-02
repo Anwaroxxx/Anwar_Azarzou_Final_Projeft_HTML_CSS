@@ -1,8 +1,8 @@
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0.78);
+  background: $nav-bg;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.8px);
   -webkit-backdrop-filter: blur(6.8px);
@@ -12,98 +12,137 @@ nav {
   left: 0;
   width: 100%;
   z-index: 999;
+  padding: 0 40px;
+
+  .logo h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 48px;
+    font-weight: 400;
+    color: $white;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    a {
+      text-decoration: none;
+      color: $white;
+      font-size: 14px;
+      transition: 0.3s;
+
+      &:hover {
+        color: $yellow;
+      }
+
+      &.home {
+        color: $yellow !important;
+      }
+    }
+  }
+
+  .dropdown-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+
+    i {
+      color: $gray;
+      font-size: 8px;
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 150px;
+      display: flex;
+      flex-direction: column;
+      background-color: $white;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 1000;
+
+      a {
+        padding: 10px 15px;
+        color: $gray;
+        font-size: 14px;
+        transition: 0.3s;
+
+        &:hover {
+          background: $yellow;
+          color: $white;
+        }
+      }
+    }
+
+    &:hover .dropdown-menu,
+    &:focus-within .dropdown-menu {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
 }
 
-.logo h1 {
-  padding-left: 5px;
-  font-family: "Pacifico", cursive;
-  font-size: 48px;
-  font-weight: 400;
-  color: #fff;
-  letter-spacing: 1px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
+@media (max-width: 900px) {
+  nav {
+    padding: 0 20px;
 
-.links {
-  display: flex;
-  gap: 20px;
-}
+    .links {
+      position: fixed;
+      top: 95px;
+      right: 0;
+      width: 250px;
+      height: calc(100vh - 95px);
+      background: $nav-bg;
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 40px;
+      transform: translateX(100%);
+      transition: 0.4s;
+    }
 
-.links a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 14px;
-  transition: 0.3s;
-}
+    #menu-toggle:checked ~ .links {
+      transform: translateX(0);
+    }
 
-.links a:hover {
-  color: rgb(255, 176, 59);
-}
+    .menu-icon {
+      display: block;
+      font-size: 25px;
+      color: $white;
+      cursor: pointer;
 
-.home {
-  color: rgb(255, 176, 59) !important;
-}
+      i:last-child {
+        display: none;
+      }
+    }
 
-#dropdown {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-}
-
-#dropdown i {
-  color: rgb(84, 84, 84);
-  font-size: 8px;
-}
-
-.dropdown-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  cursor: pointer;
-}
-
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  border: 1px solid #ccc;
-  display: flex;
-  flex-direction: column;
-  min-width: 150px;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(10px);
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  z-index: 999;
-}
-
-.dropdown-menu a {
-  padding: 10px 15px;
-  color: #545454;
-  text-decoration: none;
-  font-size: 14px;
-  transition:
-    background 0.3s,
-    color 0.3s;
-}
-
-.dropdown-menu a:hover {
-  background-color: rgb(255, 176, 59);
-  color: white;
-}
-
-.dropdown-container:hover .dropdown-menu,
-.dropdown-container:focus-within .dropdown-menu {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#menu-toggle {
-  display: none;
+    #menu-toggle:checked + .menu-icon {
+      i:first-child {
+        display: none;
+      }
+      i:last-child {
+        display: inline-block;
+      }
+    }
+  }
 }
