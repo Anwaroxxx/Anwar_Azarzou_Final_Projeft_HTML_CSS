@@ -14,10 +14,14 @@ nav {
   z-index: 999;
 }
 
-.logo h2 {
-  border-left: 5px solid rgb(255, 176, 59);
+.logo h1 {
   padding-left: 5px;
-  color: rgb(66, 66, 66);
+  font-family: "Pacifico", cursive;
+  font-size: 48px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .links {
