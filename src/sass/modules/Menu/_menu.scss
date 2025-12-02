@@ -1,0 +1,112 @@
+.menu {
+  @include MyDisplay(flex, center, center, 10px);
+  flex-direction: column;
+
+  .top-menu {
+    @include MyDisplay(flex, center, center, 20px);
+    flex-direction: column;
+    padding-top: 70px;
+
+    .whyajmi{
+      background-color: rgb(255, 247, 235);
+      color: $my_yellow;
+      text-decoration: none;
+      padding: 7px 30px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 20px;
+      cursor: default;
+    }
+
+    h2 {
+      @include MyFont(400, black, 1);
+      font-family: "Pacifico";
+
+      span {
+        color: $my_yellow;
+      }
+    }
+    .filter {
+      @include MyDisplay(flex, center, none, 25px);
+
+      .default-hover {
+        color: $my_yellow;
+      }
+
+      a {
+        text-decoration: none;
+        color: $gray;
+        font-family: "Pacifico";
+        transition: 0.5s;
+
+        &:hover {
+          color: $my_yellow;
+        }
+      }
+    }
+  }
+
+  .bottom-menu {
+    padding: 30px 0;
+    .food {
+        @include MyDisplay(flex,center,center,30px);
+        flex-direction: column;
+      .dishes-rows {
+        @include MyDisplay(flex,center,center,50px);
+        .dishes {
+          display: flex;
+          align-items: flex-start;
+          gap: 15px;
+          margin-bottom: 25px;
+
+          .left {
+            img {
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+
+          .right {
+            width: 100%;
+
+            .title-line {
+              display: flex;
+              align-items: center;
+              width: 100%;
+              gap: 10px;
+
+              h4 {
+                font-size: 18px;
+                font-weight: bold;
+                margin: 0;
+                white-space: nowrap;
+              }
+
+              .dots {
+                flex: 1;
+                border-bottom: 3px dotted #cfcfcf;
+                margin-top: 6px;
+                width: 350px;
+              }
+
+              .price {
+                white-space: nowrap;
+                color: #f4a100;
+                font-weight: bold;
+                font-size: 16px;
+              }
+            }
+
+            p {
+              font-size: 14px;
+              color: #777;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

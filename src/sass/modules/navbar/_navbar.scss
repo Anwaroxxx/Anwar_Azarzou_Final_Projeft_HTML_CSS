@@ -6,17 +6,18 @@ nav {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.8px);
   -webkit-backdrop-filter: blur(6.8px);
-  height: 60px;
+  height: 80px;
   position: fixed;
   top: 35px;
   left: 0;
   width: 100%;
   z-index: 999;
-  padding: 0 40px;
+  padding: 10px 40px;
 
   .logo h1 {
     font-family: "Pacifico", cursive;
-    font-size: 48px;
+    font-size: 30px;
+    padding-left: 70px;
     font-weight: 400;
     color: $white;
     letter-spacing: 1px;

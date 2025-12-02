@@ -12146,17 +12146,18 @@ nav {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.8px);
   -webkit-backdrop-filter: blur(6.8px);
-  height: 60px;
+  height: 80px;
   position: fixed;
   top: 35px;
   left: 0;
   width: 100%;
   z-index: 999;
-  padding: 0 40px;
+  padding: 10px 40px;
 }
 nav .logo h1, nav .logo .h1 {
   font-family: "Pacifico", cursive;
-  font-size: 48px;
+  font-size: 30px;
+  padding-left: 70px;
   font-weight: 400;
   color: #fff;
   letter-spacing: 1px;
@@ -12421,6 +12422,119 @@ nav .menu-icon {
 }
 .why-us .bottom-why .lil-containers:hover .random-para, .why-us .bottom-why .lil-containers:hover .para-container {
   color: white;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.menu .top-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+  padding-top: 70px;
+}
+.menu .top-menu .whyajmi {
+  background-color: rgb(255, 247, 235);
+  color: rgb(255, 176, 59);
+  text-decoration: none;
+  padding: 7px 30px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: default;
+}
+.menu .top-menu h2, .menu .top-menu .h2 {
+  font-weight: 400;
+  color: black;
+  letter-spacing: 1;
+  font-family: "Pacifico";
+}
+.menu .top-menu h2 span, .menu .top-menu .h2 span {
+  color: rgb(255, 176, 59);
+}
+.menu .top-menu .filter {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: 25px;
+}
+.menu .top-menu .filter .default-hover {
+  color: rgb(255, 176, 59);
+}
+.menu .top-menu .filter a {
+  text-decoration: none;
+  color: #545454;
+  font-family: "Pacifico";
+  transition: 0.5s;
+}
+.menu .top-menu .filter a:hover {
+  color: rgb(255, 176, 59);
+}
+.menu .bottom-menu {
+  padding: 30px 0;
+}
+.menu .bottom-menu .food {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: column;
+}
+.menu .bottom-menu .food .dishes-rows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.menu .bottom-menu .food .dishes-rows .dishes {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.menu .bottom-menu .food .dishes-rows .dishes .left img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.menu .bottom-menu .food .dishes-rows .dishes .right {
+  width: 100%;
+}
+.menu .bottom-menu .food .dishes-rows .dishes .right .title-line {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+.menu .bottom-menu .food .dishes-rows .dishes .right .title-line h4, .menu .bottom-menu .food .dishes-rows .dishes .right .title-line .h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  white-space: nowrap;
+}
+.menu .bottom-menu .food .dishes-rows .dishes .right .title-line .dots {
+  flex: 1;
+  border-bottom: 3px dotted #cfcfcf;
+  margin-top: 6px;
+  width: 350px;
+}
+.menu .bottom-menu .food .dishes-rows .dishes .right .title-line .price {
+  white-space: nowrap;
+  color: #f4a100;
+  font-weight: bold;
+  font-size: 16px;
+}
+.menu .bottom-menu .food .dishes-rows .dishes .right p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=app.css.map */
