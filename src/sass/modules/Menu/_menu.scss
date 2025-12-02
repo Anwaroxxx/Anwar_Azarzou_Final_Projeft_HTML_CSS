@@ -1,112 +1,154 @@
 .menu {
-  @include MyDisplay(flex, center, center, 10px);
-  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
 
   .top-menu {
-    @include MyDisplay(flex, center, center, 20px);
-    flex-direction: column;
-    padding-top: 70px;
+    text-align: center;
+    margin-bottom: 40px;
 
-    .whyajmi{
-      background-color: rgb(255, 247, 235);
-      color: $my_yellow;
-      text-decoration: none;
-      padding: 7px 30px;
-      font-size: 13px;
-      font-weight: 600;
-      border-radius: 20px;
-      cursor: default;
+    .text-section {
+      @include MyDisplay(flex, center, none, 20px);
+      flex-direction: column;
+
+      a {
+        background-color: rgb(255, 247, 235);
+        color: $my_yellow;
+        text-decoration: none;
+        padding: 7px 30px;
+        font-size: 13px;
+        font-weight: 600;
+        border-radius: 20px;
+        cursor: default;
+      }
     }
 
     h2 {
       @include MyFont(400, black, 1);
       font-family: "Pacifico";
-
-      span {
-        color: $my_yellow;
-      }
     }
-    .filter {
-      @include MyDisplay(flex, center, none, 25px);
+  }
 
-      .default-hover {
-        color: $my_yellow;
+  .yellow {
+    color: $my_yellow;
+  }
+
+  .menu-controller {
+    input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .filter-label {
+      display: inline-block;
+      margin: 0 10px 18px 0;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-family: "Pacifico", sans-serif;
+      font-weight: 400;
+      transition: all 0.18s ease;
+      user-select: none;
+      background: transparent;
+      color: #222;
+    }
+
+    #filter-all:checked + .filter-label,
+    #filter-starters:checked + .filter-label,
+    #filter-salads:checked + .filter-label,
+    #filter-specialty:checked + .filter-label {
+      color: $my_yellow;
+    }
+
+    .bottom-menu {
+      .dishes-rows {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin-bottom: 24px;
       }
 
-      a {
-        text-decoration: none;
-        color: $gray;
-        font-family: "Pacifico";
-        transition: 0.5s;
+      .dishes {
+        display: flex;
+        gap: 12px;
+        padding: 14px;
+        border-radius: 8px;
+        align-items: center;
+        transition: all 0.2s ease;
 
         &:hover {
-          color: $my_yellow;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .left img {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+
+        .right {
+          flex: 1;
+
+          .title-line {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 6px;
+
+            h4 {
+              white-space: nowrap;
+            }
+
+            .dots {
+              flex: 1;
+              height: 2px;
+              border-top: 1px dotted #000;
+            }
+
+            .price {
+              color: $my_yellow;
+              font-weight: 700;
+            }
+          }
+
+          p {
+            color: #666;
+            font-size: 14px;
+          }
         }
       }
     }
   }
 
-  .bottom-menu {
-    padding: 30px 0;
-    .food {
-        @include MyDisplay(flex,center,center,30px);
-        flex-direction: column;
-      .dishes-rows {
-        @include MyDisplay(flex,center,center,50px);
-        .dishes {
-          display: flex;
-          align-items: flex-start;
-          gap: 15px;
-          margin-bottom: 25px;
+  .menu-controller {
+    .bottom-menu .dishes {
+      display: flex;
+    }
 
-          .left {
-            img {
-              width: 60px;
-              height: 60px;
-              border-radius: 50%;
-              object-fit: cover;
-            }
-          }
+    #filter-starters:checked ~ .bottom-menu .dishes,
+    #filter-salads:checked ~ .bottom-menu .dishes,
+    #filter-specialty:checked ~ .bottom-menu .dishes {
+      display: none;
+    }
 
-          .right {
-            width: 100%;
+    #filter-starters:checked ~ .bottom-menu .dishes.starters {
+      display: flex;
+    }
 
-            .title-line {
-              display: flex;
-              align-items: center;
-              width: 100%;
-              gap: 10px;
+    #filter-salads:checked ~ .bottom-menu .dishes.salads {
+      display: flex;
+    }
 
-              h4 {
-                font-size: 18px;
-                font-weight: bold;
-                margin: 0;
-                white-space: nowrap;
-              }
+    #filter-specialty:checked ~ .bottom-menu .dishes.specialty {
+      display: flex;
+    }
 
-              .dots {
-                flex: 1;
-                border-bottom: 3px dotted #cfcfcf;
-                margin-top: 6px;
-                width: 350px;
-              }
-
-              .price {
-                white-space: nowrap;
-                color: #f4a100;
-                font-weight: bold;
-                font-size: 16px;
-              }
-            }
-
-            p {
-              font-size: 14px;
-              color: #777;
-              margin-top: 5px;
-            }
-          }
-        }
-      }
+    #filter-all:checked ~ .bottom-menu .dishes {
+      display: flex;
     }
   }
 }
