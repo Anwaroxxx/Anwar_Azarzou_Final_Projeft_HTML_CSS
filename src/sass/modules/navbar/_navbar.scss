@@ -104,22 +104,58 @@ nav {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 769px) {
   nav {
-    padding: 0 20px;
+    padding: 10px 30px;
+    top: 0;
+
+    .logo h1 {
+      padding-left: 20px;
+      font-size: 26px;
+    }
 
     .links {
       position: fixed;
-      top: 95px;
+      top: 80px;
       right: 0;
       width: 250px;
-      height: calc(100vh - 95px);
+      height: calc(100vh - 80px);
       background: $nav-bg;
       flex-direction: column;
       gap: 20px;
       padding-top: 40px;
       transform: translateX(100%);
       transition: 0.4s;
+      overflow-y: auto;
+
+      a {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+      }
+    }
+
+    .dropdown-container {
+      flex-direction: column;
+      width: 100%;
+
+      .dropdown-menu {
+        position: static;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        background: rgba(255, 255, 255, 0.1);
+        margin-top: 10px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+
+      &:hover .dropdown-menu {
+        max-height: 300px;
+      }
     }
 
     #menu-toggle:checked ~ .links {
@@ -131,6 +167,7 @@ nav {
       font-size: 25px;
       color: $white;
       cursor: pointer;
+      z-index: 1001;
 
       i:last-child {
         display: none;
@@ -144,6 +181,34 @@ nav {
       i:last-child {
         display: inline-block;
       }
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  nav {
+    height: 70px;
+    padding: 10px 15px;
+
+    .logo h1 {
+      font-size: 22px;
+      padding-left: 0;
+    }
+
+    .links {
+      width: 100%;
+      top: 70px;
+      height: calc(100vh - 70px);
+      padding-top: 30px;
+      gap: 15px;
+
+      a {
+        font-size: 13px;
+      }
+    }
+
+    .menu-icon {
+      font-size: 22px;
     }
   }
 }

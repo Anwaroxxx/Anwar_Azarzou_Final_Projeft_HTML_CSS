@@ -48,6 +48,7 @@ html {
       p {
         color: white;
         margin: 0;
+        font-size: 14px;
       }
 
       i {
@@ -62,6 +63,7 @@ html {
     gap: 10px;
     color: rgb(176, 176, 176);
     font-size: 14px;
+
     a {
       background-color: rgb(255, 176, 59);
       text-decoration: none;
@@ -69,9 +71,72 @@ html {
       padding: 5px 35px;
       border-radius: 20px;
       transition: 0.5s;
+
+      &:hover {
+        background-color: rgb(200, 138, 45);
+      }
     }
-    a:hover {
-      background-color: rgb(200, 138, 45);
+  }
+}
+
+@media (max-width: 769px) {
+  .pre-nav {
+    padding: 15px 30px;
+
+    .contact {
+      gap: 20px;
+
+      div {
+        gap: 10px;
+
+        p {
+          font-size: 12px;
+        }
+
+        i {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .booking a {
+      padding: 5px 25px;
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .pre-nav {
+    padding: 10px 15px;
+    height: auto;
+    min-height: 35px;
+
+    .contact {
+      flex-direction: column;
+      gap: 5px;
+      align-items: flex-start;
+
+      div {
+        gap: 8px;
+
+        p {
+          font-size: 11px;
+        }
+
+        i {
+          font-size: 12px;
+        }
+      }
+
+      .time {
+        display: none;
+      }
+    }
+
+    .booking a {
+      padding: 5px 20px;
+      font-size: 12px;
     }
   }
 }
