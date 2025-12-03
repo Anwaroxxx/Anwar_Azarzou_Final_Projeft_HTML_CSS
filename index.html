@@ -1,708 +1,674 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="public/css/app.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <title>Anwar_Azarzou_Final_Projeft_HTML_CSS</title>
-  </head>
-  <body>
-    <!-- BEFORE_NAVBAR SECTION -->
-    <section class="pre-nav">
-      <div class="contact">
-        <div class="phone">
-          <i class="bi bi-phone"></i>
-          <p>+1 7755 71169 55</p>
-        </div>
-        <div class="time">
-          <i class="bi bi-clock"></i>
-          <p>Mon-Sat: 11:00 AM - 23:00 PM</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="public/css/app.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <title>Anwar_Azarzou_Final_Projeft_HTML_CSS</title>
+</head>
+
+<body>
+  <!-- BEFORE_NAVBAR SECTION -->
+  <section class="pre-nav">
+    <div class="contact">
+      <div class="phone">
+        <i class="bi bi-phone"></i>
+        <p>+1 7755 71169 55</p>
+      </div>
+      <div class="time">
+        <i class="bi bi-clock"></i>
+        <p>Mon-Sat: 11:00 AM - 23:00 PM</p>
+      </div>
+    </div>
+    <div class="booking">
+      <a href="">Book a Table</a>
+    </div>
+  </section>
+  <!-- NAVIGATION SECTION -->
+  <nav>
+    <div class="logo">
+      <h1>Delicious</h1>
+    </div>
+
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-xmark"></i>
+    </label>
+
+    <div class="links">
+      <a href="" class="home">Home</a>
+      <a href="#mid">About</a>
+      <a href="/Public/pages/services.html">Menu</a>
+      <a href="">Specials</a>
+      <a href="/Public/pages/team.html">Events</a>
+      <a href="">Chefs</a>
+      <a href="">Gallery</a>
+
+      <div id="dropdown" class="dropdown-container">
+        <a href="" class="dropdown">Dropdown</a>
+        <i class="fa-solid fa-chevron-down"></i>
+        <div class="dropdown-menu">
+          <a href="#">Food</a>
+          <a href="#">Drinks</a>
+          <a href="#">Deserts</a>
+          <a href="#">Be a member</a>
         </div>
       </div>
-      <div class="booking">
-        <a href="">Book a Table</a>
-      </div>
-    </section>
-    <!-- NAVIGATION SECTION -->
-    <nav>
-      <div class="logo">
-        <h1>Delicious</h1>
+      <a href="/Public/pages/contact.html">Contact</a>
+    </div>
+  </nav>
+  <!-- HERO SECTION -->
+  <main>
+    <div id="carouselExampleIndicators" class="carousel slide hero-section carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
       </div>
 
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-xmark"></i>
-      </label>
-
-      <div class="links">
-        <a href="" class="home">Home</a>
-        <a href="#mid">About</a>
-        <a href="/Public/pages/services.html">Menu</a>
-        <a href="">Specials</a>
-        <a href="/Public/pages/team.html">Events</a>
-        <a href="">Chefs</a>
-        <a href="">Gallery</a>
-
-        <div id="dropdown" class="dropdown-container">
-          <a href="" class="dropdown">Dropdown</a>
-          <i class="fa-solid fa-chevron-down"></i>
-          <div class="dropdown-menu">
-            <a href="#">Food</a>
-            <a href="#">Drinks</a>
-            <a href="#">Deserts</a>
-            <a href="#">Be a member</a>
-          </div>
-        </div>
-        <a href="/Public/pages/contact.html">Contact</a>
-      </div>
-    </nav>
-    <!-- HERO SECTION -->
-    <main>
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide hero-section carousel-fade"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-          ></button>
-        </div>
-
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="4000">
-            <img
-              src="./public/images/hero-carousel/hero-carousel-1.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption">
-              <h1><span class="yellow">Delicious</span> Restaurant</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="hero-links">
-                <a href="">Our menu</a>
-                <a href="">Book a Table</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="4000">
-            <img
-              src="./public/images/hero-carousel/hero-carousel-2.jpg"
-              class="d-block w-100"
-            />
-            <div class="carousel-caption">
-              <h1>At vero eos et accusamus</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="hero-links">
-                <a href="">Our menu</a>
-                <a href="">Book a Table</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="4000">
-            <img
-              src="./public/images/hero-carousel/hero-carousel-3.jpg"
-              class="d-block w-100"
-            />
-            <div class="carousel-caption">
-              <h1>Temporibus autem quibusdam</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="hero-links">
-                <a href="">Our menu</a>
-                <a href="">Book a Table</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon"></span>
-        </button>
-      </div>
-    </main>
-    <!-- ABOUT SECTION -->
-    <section class="mid" id="mid">
-      <div class="left">
-        <img src="/public/images/about.jpg" alt="" />
-      </div>
-      <div class="right">
-        <div class="top-text">
-          <h3>
-            Voluptatem dignissimos provident quasi corporis voluptates sit
-            assumenda.
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div class="mid-text">
-          <div>
-            <i class="bi bi-check2-all"></i>
-            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <div>
-            <i class="bi bi-check2-all"></i>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-          </div>
-          <div>
-            <i class="bi bi-check2-all"></i>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img src="./public/images/hero-carousel/hero-carousel-1.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h1><span class="yellow">Delicious</span> Restaurant</h1>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate trideta storacalaperda
-              mastiro dolore eu fugiat nulla pariatur.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
             </p>
+            <div class="hero-links">
+              <a href="">Our menu</a>
+              <a href="">Book a Table</a>
+            </div>
           </div>
         </div>
-        <div class="last-text">
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="./public/images/hero-carousel/hero-carousel-2.jpg" class="d-block w-100" />
+          <div class="carousel-caption">
+            <h1>At vero eos et accusamus</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="hero-links">
+              <a href="">Our menu</a>
+              <a href="">Book a Table</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="./public/images/hero-carousel/hero-carousel-3.jpg" class="d-block w-100" />
+          <div class="carousel-caption">
+            <h1>Temporibus autem quibusdam</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="hero-links">
+              <a href="">Our menu</a>
+              <a href="">Book a Table</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </main>
+  <!-- ABOUT SECTION -->
+  <section class="mid" id="mid">
+    <div class="left">
+      <img src="/public/images/about.jpg" alt="" />
+    </div>
+    <div class="right">
+      <div class="top-text">
+        <h3>
+          Voluptatem dignissimos provident quasi corporis voluptates sit
+          assumenda.
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="mid-text">
+        <div>
+          <i class="bi bi-check2-all"></i>
+          <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div>
+          <i class="bi bi-check2-all"></i>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+        </div>
+        <div>
+          <i class="bi bi-check2-all"></i>
           <p>
             Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore
-            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident
+            irure dolor in reprehenderit in voluptate trideta storacalaperda
+            mastiro dolore eu fugiat nulla pariatur.
           </p>
         </div>
       </div>
-    </section>
-    <!-- WHY-US SECTION -->
-    <section class="why-us">
-      <div class="top-why">
-        <a href="">WHY US</a>
-        <h2>Why Choose <span class="yellow">Our Restaurant</span></h2>
+      <div class="last-text">
+        <p>
+          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore
+          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident
+        </p>
       </div>
-      <div class="bottom-why">
-        <div class="lil-containers">
-          <h2 class="number-container">01</h2>
-          <p class="para-container">Lorem ipsem</p>
-          <p class="random-para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            sequi eaque quas laboriosam corporis.
+    </div>
+  </section>
+  <!-- WHY-US SECTION -->
+  <section class="why-us">
+    <div class="top-why">
+      <a href="">WHY US</a>
+      <h2>Why Choose <span class="yellow">Our Restaurant</span></h2>
+    </div>
+    <div class="bottom-why">
+      <div class="lil-containers">
+        <h2 class="number-container">01</h2>
+        <p class="para-container">Lorem ipsem</p>
+        <p class="random-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          sequi eaque quas laboriosam corporis.
+        </p>
+      </div>
+      <div class="lil-containers">
+        <h2 class="number-container">02</h2>
+        <p class="para-container">Lorem ipsum</p>
+        <p class="random-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          sequi eaque quas laboriosam corporis.
+        </p>
+      </div>
+      <div class="lil-containers">
+        <h2 class="number-container">03</h2>
+        <p class="para-container">Lorem ipsum dolor sit</p>
+        <p class="random-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          sequi eaque quas laboriosam corporis.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- MENU SECTION -->
+  <section class="menu">
+    <div class="top-menu">
+      <div class="text-section">
+        <a href="">MENU</a>
+        <h2>Check Our Tasty <span class="yellow">Menu</span></h2>
+      </div>
+    </div>
+    <div class="menu-controller">
+      <input type="radio" name="menu-filter" id="filter-all" checked />
+      <label class="filter-label" for="filter-all">All</label>
+
+      <input type="radio" name="menu-filter" id="filter-starters" />
+      <label class="filter-label" for="filter-starters">Starters</label>
+
+      <input type="radio" name="menu-filter" id="filter-salads" />
+      <label class="filter-label" for="filter-salads">Salads</label>
+
+      <input type="radio" name="menu-filter" id="filter-specialty" />
+      <label class="filter-label" for="filter-specialty">Specialty</label>
+      <div class="bottom-menu">
+        <div class="dishes-rows">
+          <div class="dishes starters">
+            <div class="left">
+              <img src="./public/images/menu/lobster-bisque.jpg" alt="" />
+            </div>
+            <div class="right">
+              <div class="title-line">
+                <h4>Lobster Bisque</h4>
+                <div class="dots"></div>
+                <span class="price">$5.95</span>
+              </div>
+              <p>Rich and creamy lobster soup</p>
+            </div>
+          </div>
+          <div class="dishes starters">
+            <div class="left">
+              <img src="./public/images/menu/bread-barrel.jpg" alt="" />
+            </div>
+            <div class="right">
+              <div class="title-line">
+                <h4>Bread Barrel</h4>
+                <div class="dots"></div>
+                <span class="price">$6.95</span>
+              </div>
+              <p>Freshly baked artisan bread selection</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dishes-rows">
+          <div class="dishes specialty">
+            <div class="left">
+              <img src="./public/images/menu/cake.jpg" alt="" />
+            </div>
+            <div class="right">
+              <div class="title-line">
+                <h4>Chocolate Cake</h4>
+                <div class="dots"></div>
+                <span class="price">$7.95</span>
+              </div>
+              <p>Decadent chocolate layer cake</p>
+            </div>
+          </div>
+
+          <div class="dishes salads">
+            <div class="left">
+              <img src="./public/images/menu/caesar.jpg" alt="" />
+            </div>
+            <div class="right">
+              <div class="title-line">
+                <h4>Caesar Salad</h4>
+                <div class="dots"></div>
+                <span class="price">$8.95</span>
+              </div>
+              <p>Classic caesar with homemade dressing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dishes-rows">
+          <div class="dishes specialty">
+            <div class="left">
+              <img src="./public/images/menu/tuscan-grilled.jpg" alt="" />
+            </div>
+            <div class="right">
+              <div class="title-line">
+                <h4>Tuscan Grilled</h4>
+                <div class="dots"></div>
+                <span class="price">$9.95</span>
+              </div>
+              <p>Grilled vegetables with herbs</p>
+            </div>
+          </div>
+
+          <div class="dishes starters">
+            <div class="left">
+              <img src="./public/images/menu/mozzarella.jpg" alt="" />
+            </div>
+            <div class="right">
+              <div class="title-line">
+                <h4>Mozzarella Sticks</h4>
+                <div class="dots"></div>
+                <span class="price">$6.95</span>
+              </div>
+              <p>Crispy fried mozzarella</p>
+            </div>
+          </div>
+        </div>
+        <div class="dishes-rows">
+          <div class="dishes salads">
+            <div class="left">
+              <img src="./public/images/menu/greek-salad.jpg" alt="" />
+            </div>
+            <div class="right">
+              <div class="title-line">
+                <h4>Greek Salad</h4>
+                <div class="dots"></div>
+                <span class="price">$7.95</span>
+              </div>
+              <p>Fresh vegetables with feta cheese</p>
+            </div>
+          </div>
+          <div class="dishes salads">
+            <div class="left">
+              <img src="./public/images/menu/spinach-salad.jpg" alt="" />
+            </div>
+            <div class="right">
+              <div class="title-line">
+                <h4>Spinach Salad</h4>
+                <div class="dots"></div>
+                <span class="price">$8.95</span>
+              </div>
+              <p>Baby spinach with warm bacon dressing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SPECIALS SECTION -->
+  <section class="specials">
+    <div class="top-specials">
+      <a href="">SPECIALS</a>
+      <h2>Check Our <span class="yellow">Specials</span></h2>
+    </div>
+    <!--bottom specials-->
+    <div class="bottom-specials">
+      <div class="left-specials">
+        <div class="specials-rows">
+          <h4>Modi sit est</h4>
+        </div>
+        <div class="specials-rows">
+          <h4>Unde praesentium sed</h4>
+        </div>
+        <div class="specials-rows">
+          <h4>Pariatur explicabo vel</h4>
+        </div>
+        <div class="specials-rows">
+          <h4>Nostrum qui quasi</h4>
+        </div>
+        <div class="specials-rows">
+          <h4>Iusto ut expedita aut</h4>
+        </div>
+      </div>
+      <div class="right-specials">
+        <div class="text-left">
+          <h3>Architecto ut aperiam autem id</h3>
+          <p>
+            Qui laudantium consequatur laborum sit qui ad sapiente dila parde
+            sonata raqer a videna mareta paulona marka
+          </p>
+          <p>
+            Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum
+            sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae
+            aut qui. Est repellat minima eveniet eius et quis magni nihil.
+            Consequatur dolorem quaerat quos qui similique accusamus nostrum
+            rem vero
           </p>
         </div>
-        <div class="lil-containers">
-          <h2 class="number-container">02</h2>
-          <p class="para-container">Lorem ipsum</p>
-          <p class="random-para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            sequi eaque quas laboriosam corporis.
-          </p>
-        </div>
-        <div class="lil-containers">
-          <h2 class="number-container">03</h2>
-          <p class="para-container">Lorem ipsum dolor sit</p>
-          <p class="random-para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            sequi eaque quas laboriosam corporis.
-          </p>
+        <div class="image-right">
+          <img src="./public/images/specials-1.jpg" alt="" width="300px" />
         </div>
       </div>
-    </section>
-    <!-- MENU SECTION -->
-    <section class="menu">
-      <div class="top-menu">
-        <div class="text-section">
-          <a href="">MENU</a>
-          <h2>Check Our Tasty <span class="yellow">Menu</span></h2>
-        </div>
+    </div>
+  </section>
+  <!-- EVENTS SECTION -->
+  <section class="events">
+    <div id="partyCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#partyCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" ;" data-bs-target="#partyCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#partyCarousel" data-bs-slide-to="2"></button>
       </div>
-      <div class="menu-controller">
-        <input type="radio" name="menu-filter" id="filter-all" checked />
-        <label class="filter-label" for="filter-all">All</label>
 
-        <input type="radio" name="menu-filter" id="filter-starters" />
-        <label class="filter-label" for="filter-starters">Starters</label>
+      <div class="carousel-inner">
+        <!-- SLIDE 1 -->
+        <div class="carousel-item active">
+          <div class="container py-5">
+            <div class="row align-items-center">
+              <!-- LEFT IMAGE -->
+              <div class="col-lg-6">
+                <img src="./public/images/events-slider/events-slider-1.jpg" class="img-fluid rounded"
+                  alt="Birthday Party" />
+              </div>
+              <!-- RIGHT CONTENT -->
+              <div class="col-lg-6 text-white">
+                <h2 class="fw-bold" style="font-family: 'Pacifico', cursive">
+                  Birthday Parties
+                </h2>
+                <h3 class="fw-bold">$189</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                </p>
 
-        <input type="radio" name="menu-filter" id="filter-salads" />
-        <label class="filter-label" for="filter-salads">Salads</label>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="bi bi-check2-circle"></i> Ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat.
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check2-circle"></i> Duis aute irure dolor
+                    in reprehenderit in voluptate velit.
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check2-circle"></i> Ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat.
+                  </li>
+                </ul>
 
-        <input type="radio" name="menu-filter" id="filter-specialty" />
-        <label class="filter-label" for="filter-specialty">Specialty</label>
-        <div class="bottom-menu">
-          <div class="dishes-rows">
-            <div class="dishes starters">
-              <div class="left">
-                <img src="./public/images/menu/lobster-bisque.jpg" alt="" />
-              </div>
-              <div class="right">
-                <div class="title-line">
-                  <h4>Lobster Bisque</h4>
-                  <div class="dots"></div>
-                  <span class="price">$5.95</span>
-                </div>
-                <p>Rich and creamy lobster soup</p>
-              </div>
-            </div>
-            <div class="dishes starters">
-              <div class="left">
-                <img src="./public/images/menu/bread-barrel.jpg" alt="" />
-              </div>
-              <div class="right">
-                <div class="title-line">
-                  <h4>Bread Barrel</h4>
-                  <div class="dots"></div>
-                  <span class="price">$6.95</span>
-                </div>
-                <p>Freshly baked artisan bread selection</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="dishes-rows">
-            <div class="dishes specialty">
-              <div class="left">
-                <img src="./public/images/menu/cake.jpg" alt="" />
-              </div>
-              <div class="right">
-                <div class="title-line">
-                  <h4>Chocolate Cake</h4>
-                  <div class="dots"></div>
-                  <span class="price">$7.95</span>
-                </div>
-                <p>Decadent chocolate layer cake</p>
-              </div>
-            </div>
-
-            <div class="dishes salads">
-              <div class="left">
-                <img src="./public/images/menu/caesar.jpg" alt="" />
-              </div>
-              <div class="right">
-                <div class="title-line">
-                  <h4>Caesar Salad</h4>
-                  <div class="dots"></div>
-                  <span class="price">$8.95</span>
-                </div>
-                <p>Classic caesar with homemade dressing</p>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat...
+                </p>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="dishes-rows">
-            <div class="dishes specialty">
-              <div class="left">
-                <img src="./public/images/menu/tuscan-grilled.jpg" alt="" />
+        <!-- SLIDE 2 -->
+        <div class="carousel-item">
+          <div class="container py-5">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <img src="./public/images/events-slider/events-slider-2.jpg" class="img-fluid rounded"
+                  alt="Private Party" />
               </div>
-              <div class="right">
-                <div class="title-line">
-                  <h4>Tuscan Grilled</h4>
-                  <div class="dots"></div>
-                  <span class="price">$9.95</span>
-                </div>
-                <p>Grilled vegetables with herbs</p>
-              </div>
-            </div>
 
-            <div class="dishes starters">
-              <div class="left">
-                <img src="./public/images/menu/mozzarella.jpg" alt="" />
-              </div>
-              <div class="right">
-                <div class="title-line">
-                  <h4>Mozzarella Sticks</h4>
-                  <div class="dots"></div>
-                  <span class="price">$6.95</span>
-                </div>
-                <p>Crispy fried mozzarella</p>
+              <div class="col-lg-6 text-white">
+                <h2 class="fw-bold" style="font-family: 'Pacifico', cursive">
+                  Private Parties
+                </h2>
+                <h3 class="fw-bold">$290</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                </p>
+
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="bi bi-check2-circle"></i> Ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat.
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check2-circle"></i> Duis aute irure dolor
+                    in reprehenderit in voluptate velit.
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check2-circle"></i> Ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat.
+                  </li>
+                </ul>
+
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat...
+                </p>
               </div>
             </div>
           </div>
-          <div class="dishes-rows">
-            <div class="dishes salads">
-              <div class="left">
-                <img src="./public/images/menu/greek-salad.jpg" alt="" />
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="carousel-item">
+          <div class="container py-5">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <img src="./public/images/events-slider/events-slider-3.jpg" class="img-fluid rounded"
+                  alt="Custom Party" />
               </div>
-              <div class="right">
-                <div class="title-line">
-                  <h4>Greek Salad</h4>
-                  <div class="dots"></div>
-                  <span class="price">$7.95</span>
-                </div>
-                <p>Fresh vegetables with feta cheese</p>
-              </div>
-            </div>
-            <div class="dishes salads">
-              <div class="left">
-                <img src="./public/images/menu/spinach-salad.jpg" alt="" />
-              </div>
-              <div class="right">
-                <div class="title-line">
-                  <h4>Spinach Salad</h4>
-                  <div class="dots"></div>
-                  <span class="price">$8.95</span>
-                </div>
-                <p>Baby spinach with warm bacon dressing</p>
+
+              <div class="col-lg-6 text-white">
+                <h2 class="fw-bold" style="font-family: 'Pacifico', cursive">
+                  Custom Parties
+                </h2>
+                <h3 class="fw-bold">$99</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                </p>
+
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="bi bi-check2-circle"></i> Ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat.
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check2-circle"></i> Duis aute irure dolor
+                    in reprehenderit in voluptate velit.
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check2-circle"></i> Ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat.
+                  </li>
+                </ul>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat...
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- SPECIALS SECTION -->
-    <section class="specials">
-      <div class="top-specials">
-        <a href="">SPECIALS</a>
-        <h2>Check Our <span class="yellow">Specials</span></h2>
-      </div>
-      <!--bottom specials-->
-      <div class="bottom-specials">
-        <div class="left-specials">
-          <div class="specials-rows">
-            <h4>Modi sit est</h4>
-          </div>
-          <div class="specials-rows">
-            <h4>Unde praesentium sed</h4>
-          </div>
-          <div class="specials-rows">
-            <h4>Pariatur explicabo vel</h4>
-          </div>
-          <div class="specials-rows">
-            <h4>Nostrum qui quasi</h4>
-          </div>
-          <div class="specials-rows">
-            <h4>Iusto ut expedita aut</h4>
-          </div>
-        </div>
-        <div class="right-specials">
-          <div class="text-left">
-            <h3>Architecto ut aperiam autem id</h3>
-            <p>
-              Qui laudantium consequatur laborum sit qui ad sapiente dila parde
-              sonata raqer a videna mareta paulona marka
-            </p>
-            <p>
-              Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum
-              sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae
-              aut qui. Est repellat minima eveniet eius et quis magni nihil.
-              Consequatur dolorem quaerat quos qui similique accusamus nostrum
-              rem vero
-            </p>
-          </div>
-          <div class="image-right">
-            <img src="./public/images/specials-1.jpg" alt="" width="300px" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- EVENTS SECTION -->
-    <section class="events">
-      <div
-        id="partyCarousel"
-        class="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-interval="2500"
-      >
-        <!-- Indicators -->
-        <div class="carousel-indicators" >
-          <button
-            type="button"
-            data-bs-target="#partyCarousel"
-            data-bs-slide-to="0"
-            class="active"
-          ></button>
-          <button
-            type="button";"
-            data-bs-target="#partyCarousel"
-            data-bs-slide-to="1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#partyCarousel"
-            data-bs-slide-to="2"
-          ></button>
-        </div>
+    </div>
+  </section>
+  <!-- FORM SECTION -->
+  <section class="form">
+    <div class="top-form">
+      <a href="#">Book a Table</a>
+      <h2>Book a <span class="yellow">Table</span></h2>
+    </div>
 
-        <div class="carousel-inner">
-          <!-- SLIDE 1 -->
-          <div class="carousel-item active">
-            <div class="container py-5">
-              <div class="row align-items-center">
-                <!-- LEFT IMAGE -->
-                <div class="col-lg-6">
-                  <img
-                    src="./public/images/events-slider/events-slider-1.jpg"
-                    class="img-fluid rounded"
-                    alt="Birthday Party"
-                  />
-                </div>
-                <!-- RIGHT CONTENT -->
-                <div class="col-lg-6 text-white">
-                  <h2 class="fw-bold" style="font-family: 'Pacifico', cursive">
-                    Birthday Parties
-                  </h2>
-                  <h3 class="fw-bold">$189</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-                  </p>
-
-                  <ul class="list-unstyled">
-                    <li class="mb-2">
-                      <i class="bi bi-check2-circle"></i> Ullamco laboris nisi
-                      ut aliquip ex ea commodo consequat.
-                    </li>
-                    <li class="mb-2">
-                      <i class="bi bi-check2-circle"></i> Duis aute irure dolor
-                      in reprehenderit in voluptate velit.
-                    </li>
-                    <li class="mb-2">
-                      <i class="bi bi-check2-circle"></i> Ullamco laboris nisi
-                      ut aliquip ex ea commodo consequat.
-                    </li>
-                  </ul>
-
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat...
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- SLIDE 2 -->
-          <div class="carousel-item">
-            <div class="container py-5">
-              <div class="row align-items-center">
-                <div class="col-lg-6">
-                  <img
-                    src="./public/images/events-slider/events-slider-2.jpg"
-                    class="img-fluid rounded"
-                    alt="Private Party"
-                  />
-                </div>
-
-                <div class="col-lg-6 text-white">
-                  <h2 class="fw-bold" style="font-family: 'Pacifico', cursive">
-                    Private Parties
-                  </h2>
-                  <h3 class="fw-bold">$290</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-                  </p>
-
-                  <ul class="list-unstyled">
-                    <li class="mb-2">
-                      <i class="bi bi-check2-circle"></i> Ullamco laboris nisi
-                      ut aliquip ex ea commodo consequat.
-                    </li>
-                    <li class="mb-2">
-                      <i class="bi bi-check2-circle"></i> Duis aute irure dolor
-                      in reprehenderit in voluptate velit.
-                    </li>
-                    <li class="mb-2">
-                      <i class="bi bi-check2-circle"></i> Ullamco laboris nisi
-                      ut aliquip ex ea commodo consequat.
-                    </li>
-                  </ul>
-
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat...
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- SLIDE 3 -->
-          <div class="carousel-item">
-            <div class="container py-5">
-              <div class="row align-items-center">
-                <div class="col-lg-6">
-                  <img
-                    src="./public/images/events-slider/events-slider-3.jpg"
-                    class="img-fluid rounded"
-                    alt="Custom Party"
-                  />
-                </div>
-
-                <div class="col-lg-6 text-white">
-                  <h2 class="fw-bold" style="font-family: 'Pacifico', cursive">
-                    Custom Parties
-                  </h2>
-                  <h3 class="fw-bold">$99</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-                  </p>
-
-                  <ul class="list-unstyled">
-                    <li class="mb-2">
-                      <i class="bi bi-check2-circle"></i> Ullamco laboris nisi
-                      ut aliquip ex ea commodo consequat.
-                    </li>
-                    <li class="mb-2">
-                      <i class="bi bi-check2-circle"></i> Duis aute irure dolor
-                      in reprehenderit in voluptate velit.
-                    </li>
-                    <li class="mb-2">
-                      <i class="bi bi-check2-circle"></i> Ullamco laboris nisi
-                      ut aliquip ex ea commodo consequat.
-                    </li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat...
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- FORM SECTION -->
-    <section class="form">
-      <div class="top-form">
-        <a href="#">Book a Table</a>
-        <h2>Book a <span class="yellow">Table</span></h2>
+    <div class="bottom-form">
+      <div class="left-form">
+        <img src="./public/images/reservation.jpg" alt="Reservation" />
       </div>
 
-      <div class="bottom-form">
-        <div class="left-form">
-          <img src="./public/images/reservation.jpg" alt="Reservation" />
+      <div class="right-form">
+        <div class="top-inputs">
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <input type="tel" placeholder="Your Phone" />
         </div>
 
-        <div class="right-form">
-          <div class="top-inputs">
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Your Email" />
-            <input type="tel" placeholder="Your Phone" />
-          </div>
+        <div class="mid-inputs">
+          <input type="date" />
+          <input type="time" />
+          <input type="number" placeholder="# Of People" />
+        </div>
 
-          <div class="mid-inputs">
-            <input type="date" />
-            <input type="time" />
-            <input type="number" placeholder="# Of People" />
-          </div>
-
-          <div class="last-inputs">
-            <textarea placeholder="Message"></textarea>
-            <button>Book a Table</button>
-          </div>
+        <div class="last-inputs">
+          <textarea placeholder="Message"></textarea>
+          <button>Book a Table</button>
         </div>
       </div>
-    </section>
-     <!-- GALLERY SECTION -->
-     <section class="gallery">
-      <div class="top-gallery">
-        <a href="">Book a Table</a>
-        <h2>Some photos from <span class="yellow">Our Restaurant</span></h2>
-      </div>
-      <div class="bottom-gallery">
-        <div class="top-pics">
-          <div>
-            <img src="/public/images/gallery/gallery-1.jpg" alt="">
-          </div>
-          <div>
-            <img src="/public/images/gallery/gallery-2.jpg" alt="">
-          </div>
-          <div>
-            <img src="/public/images/gallery/gallery-3.jpg" alt="">
-          </div>
-          <div>
-            <img src="/public/images/gallery/gallery-4.jpg" alt="">
-          </div>
-        </div>
-        <div class="bottom-pics">
-          <div>
-            <img src="/public/images/gallery/gallery-5.jpg" alt="">
-          </div>
-          <div>
-            <img src="/public/images/gallery/gallery-6.jpg" alt="">
-          </div>
-          <div>
-            <img src="/public/images/gallery/gallery-7.jpg" alt="">
-          </div>
-          <div>
-            <img src="/public/images/gallery/gallery-8.jpg" alt="">
-          </div>
-        </div>
-      </div>
-     </section>
-     <!-- CHEF SECTION -->
-     <section class="chef d-flex align-items-center flex-column pt-5">
-      <div class="top-gallery">
-        <a href="">CHEFS</a>
-        <h2>Our Professional <span class="yellow">Chefs</span></h2>
-      </div>
-      <div class="bottom-gallery">
+    </div>
+  </section>
+  <!-- GALLERY SECTION -->
+  <section class="gallery">
+    <div class="top-gallery">
+      <a href="">Book a Table</a>
+      <h2>Some photos from <span class="yellow">Our Restaurant</span></h2>
+    </div>
+    <div class="bottom-gallery">
+      <div class="top-pics">
         <div>
-          <img src="/public/images/chefs/chefs-1.jpg" alt="">
-        </div>
-        <div class="little-container">
-          <div>
-            <h3>Walter White</h3>
-          </div>
-          <div>
-            Sarah Jhonson
-          </div>
+          <img src="/public/images/gallery/gallery-1.jpg" alt="">
         </div>
         <div>
-          <img src="/public/images/chefs/chefs-2.jpg" alt="">
-        </div>
-        <div class="little-container">
-          <div>
-            <h3>Walter White</h3>
-          </div>
-          <div>
-            Sarah Jhonson
-          </div>
+          <img src="/public/images/gallery/gallery-2.jpg" alt="">
         </div>
         <div>
-          <img src="/public/images/chefs/chefs-3.jpg" alt="">
+          <img src="/public/images/gallery/gallery-3.jpg" alt="">
         </div>
-        <div class="little-container">
-          <div>
-            <h3>Walter White</h3>
-          </div>
-          <div>
-            Sarah Jhonson
-          </div>
+        <div>
+          <img src="/public/images/gallery/gallery-4.jpg" alt="">
         </div>
       </div>
-     </section>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-  </body>
+      <div class="bottom-pics">
+        <div>
+          <img src="/public/images/gallery/gallery-5.jpg" alt="">
+        </div>
+        <div>
+          <img src="/public/images/gallery/gallery-6.jpg" alt="">
+        </div>
+        <div>
+          <img src="/public/images/gallery/gallery-7.jpg" alt="">
+        </div>
+        <div>
+          <img src="/public/images/gallery/gallery-8.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CHEF SECTION -->
+
+  <section class="chef container py-5 text-center">
+    <div class="top-gallery mb-4">
+      <a href="" class="text-decoration-none text-warning">CHEFS</a>
+      <h2>Our Professional <span class="text-warning">Chefs</span></h2>
+    </div>
+
+    <div class="row g-4">
+      <!-- Chef 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card border-0 shadow chef-card position-relative">
+          <img src="/public/images/chefs/chefs-1.jpg" class="card-img-top" alt="">
+
+          <div class="card-body bg-white position-absolute start-50 translate-middle-x top-360 mb-3 text-start w-250">
+            <h4 class="card-title mb-0">Walter White</h4>
+            <p class="text-muted mb-2">Master Chef</p>
+          <div class="social-icons d-flex gap-2">
+            <i class="bi bi-twitter-x text-dark"></i>
+            <i class="bi bi-facebook text-dark"></i>
+            <i class="bi bi-instagram text-dark"></i>
+            <i class="bi bi-linkedin text-dark"></i>
+        </div>
+      </div>
+  </div>
+      </div>
+      <!-- Chef 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card border-0 shadow chef-card position-relative">
+  <img src="/public/images/chefs/chefs-2.jpg" class="card-img-top" alt="">
+
+  <div class="card-body bg-white position-absolute start-50 translate-middle-x top-360 mb-3 text-start w-250">
+    <h4 class="card-title mb-0">Walter White</h4>
+    <p class="text-muted mb-2">Master Chef</p>
+
+    <div class="social-icons d-flex gap-2">
+      <i class="bi bi-twitter-x text-dark"></i>
+      <i class="bi bi-facebook text-dark"></i>
+      <i class="bi bi-instagram text-dark"></i>
+      <i class="bi bi-linkedin text-dark"></i>
+    </div>
+  </div>
+</div>
+
+      </div>
+      <!-- Chef 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card border-0 shadow chef-card position-relative">
+  <img src="/public/images/chefs/chefs-3.jpg" class="card-img-top" alt="">
+
+  <div class="card-body bg-white position-absolute start-50 translate-middle-x top-360 mb-3 text-start w-250">
+    <h4 class="card-title mb-0">Walter White</h4>
+    <p class="text-muted mb-2">Master Chef</p>
+
+    <div class="social-icons d-flex gap-2">
+      <i class="bi bi-twitter-x text-dark"></i>
+      <i class="bi bi-facebook text-dark"></i>
+      <i class="bi bi-instagram text-dark"></i>
+      <i class="bi bi-linkedin text-dark"></i>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </section>
+<!-- FEEDBACK SECTION -->
+ <section class="feedback">
+      
+ </section>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
 </html>

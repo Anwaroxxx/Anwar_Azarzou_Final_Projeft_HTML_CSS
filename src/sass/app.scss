@@ -1,13 +1,42 @@
-/*Imports for Costumizing and Bootstrap Components*/
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "../../node_modules/bootstrap/scss/carousel";
-@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+/*importing bash ncostumize les vars*/
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 
-/*Costumizing my_Vars & my_Fts*/
+/*Costumizing text+background colors*/
+$yellow: rgb(255, 176, 59);
+$myColors: ("yellow": $yellow);
+$theme-colors: map-merge($theme-colors, $myColors);
 
-/*Imports for basic SASS linking*/
+/*Costumizing l position properties kamlin*/
+@for $i from 1 through 500 {
+    .top-#{$i} {
+        top: #{$i}px !important;
+    }
+    .bottom-#{$i} {
+        bottom: #{$i}px !important;
+    }
+    .start-#{$i} {
+        left: #{$i}px !important;
+    }
+    .end-#{$i} {
+        right: #{$i}px !important;
+    }
+}
+/*Costumizing width w height*/
+@for $i from 1 through 500 {
+    .w-#{$i} {
+        width: #{$i}px !important;
+    }
+}
+@for $i from 1 through 500 {
+    .h-#{$i} {
+        height: #{$i}px !important;
+    }
+}
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import "./AllVariables";
 @import "./AllFunctions";
-@import "AllModules";
+@import "./AllModules";
