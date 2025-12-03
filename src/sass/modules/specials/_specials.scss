@@ -1,4 +1,5 @@
 .specials {
+    padding-bottom: 50px;
     @include MyDisplay(flex, center, none, 30px);
     flex-direction: column;
 

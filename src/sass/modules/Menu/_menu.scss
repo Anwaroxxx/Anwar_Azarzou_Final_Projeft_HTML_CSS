@@ -56,10 +56,10 @@
       color: #222;
     }
 
-    #filter-all:checked + .filter-label,
-    #filter-starters:checked + .filter-label,
-    #filter-salads:checked + .filter-label,
-    #filter-specialty:checked + .filter-label {
+    #filter-all:checked+.filter-label,
+    #filter-starters:checked+.filter-label,
+    #filter-salads:checked+.filter-label,
+    #filter-specialty:checked+.filter-label {
       color: $my_yellow;
     }
 
@@ -129,25 +129,25 @@
       display: flex;
     }
 
-    #filter-starters:checked ~ .bottom-menu .dishes,
-    #filter-salads:checked ~ .bottom-menu .dishes,
-    #filter-specialty:checked ~ .bottom-menu .dishes {
+    #filter-starters:checked~.bottom-menu .dishes,
+    #filter-salads:checked~.bottom-menu .dishes,
+    #filter-specialty:checked~.bottom-menu .dishes {
       display: none;
     }
 
-    #filter-starters:checked ~ .bottom-menu .dishes.starters {
+    #filter-starters:checked~.bottom-menu .dishes.starters {
       display: flex;
     }
 
-    #filter-salads:checked ~ .bottom-menu .dishes.salads {
+    #filter-salads:checked~.bottom-menu .dishes.salads {
       display: flex;
     }
 
-    #filter-specialty:checked ~ .bottom-menu .dishes.specialty {
+    #filter-specialty:checked~.bottom-menu .dishes.specialty {
       display: flex;
     }
 
-    #filter-all:checked ~ .bottom-menu .dishes {
+    #filter-all:checked~.bottom-menu .dishes {
       display: flex;
     }
   }
