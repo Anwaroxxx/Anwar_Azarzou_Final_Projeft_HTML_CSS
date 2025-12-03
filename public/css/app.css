@@ -12810,4 +12810,77 @@ img {
   background-color: rgb(255, 155.443877551, 8);
 }
 
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: 30px;
+  flex-direction: column;
+}
+.gallery .top-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.gallery .top-gallery a {
+  background-color: rgb(255, 247, 235);
+  color: rgb(255, 176, 59);
+  text-decoration: none;
+  padding: 7px 30px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: default;
+}
+.gallery .top-gallery h2, .gallery .top-gallery .h2 {
+  font-weight: 400;
+  color: black;
+  letter-spacing: 1;
+  font-family: "Pacifico";
+}
+.gallery .top-gallery h2 span, .gallery .top-gallery .h2 span {
+  color: rgb(255, 176, 59);
+}
+.gallery .bottom-gallery {
+  display: flex;
+  align-items: center;
+  row-gap: 3px;
+  flex-direction: column;
+  overflow: hidden;
+}
+.gallery .bottom-gallery .top-pics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3px;
+  overflow: hidden;
+}
+.gallery .bottom-gallery .top-pics div {
+  overflow: hidden;
+}
+.gallery .bottom-gallery .top-pics div img {
+  width: 370px;
+  transition: transform 0.4s ease;
+}
+.gallery .bottom-gallery .top-pics div img:hover {
+  transform: scale(1.1);
+}
+.gallery .bottom-gallery .bottom-pics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3px;
+  overflow: hidden;
+}
+.gallery .bottom-gallery .bottom-pics div {
+  overflow: hidden;
+}
+.gallery .bottom-gallery .bottom-pics div img {
+  width: 370px;
+  transition: transform 0.4s ease;
+}
+.gallery .bottom-gallery .bottom-pics div img:hover {
+  transform: scale(1.1);
+}
+
 /*# sourceMappingURL=app.css.map */

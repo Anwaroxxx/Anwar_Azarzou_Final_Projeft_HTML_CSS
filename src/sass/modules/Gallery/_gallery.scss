@@ -1,0 +1,72 @@
+.gallery {
+    @include MyDisplay(flex, center, none, 30px);
+    flex-direction: column;
+
+    .top-gallery {
+        @include MyDisplay(flex, center, center, 10px);
+        flex-direction: column;
+
+        a {
+            background-color: rgb(255, 247, 235);
+            color: $my_yellow;
+            text-decoration: none;
+            padding: 7px 30px;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 20px;
+            cursor: default;
+        }
+
+        h2 {
+            @include MyFont(400, black, 1);
+            font-family: "Pacifico";
+
+            span {
+                color: $my_yellow;
+            }
+        }
+    }
+
+    .bottom-gallery {
+        display: flex;
+        align-items: center;
+        row-gap: 3px;
+        flex-direction: column;
+        overflow: hidden;
+        .top-pics {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 3px;
+            overflow: hidden;
+            div{
+                overflow: hidden;
+            }
+            div img {
+                width: 370px;
+                transition: transform 0.4s ease;
+            }
+
+            div img:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .bottom-pics {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 3px;
+            overflow: hidden;
+            div{
+                overflow: hidden;
+            }
+            div img {
+                width: 370px;
+                transition: transform 0.4s ease;
+            }
+
+            div img:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
