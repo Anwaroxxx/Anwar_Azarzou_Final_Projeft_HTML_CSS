@@ -1,6 +1,7 @@
 .contact {
-    @include MyDisplay(flex,center,none,20px);
+    @include MyDisplay(flex, center, none, 20px);
     flex-direction: column;
+
     .contact-top {
         @include MyDisplay(flex, center, center, 20px);
         flex-direction: column;
@@ -39,9 +40,156 @@
     }
 
     .contact-bottom {
-        
+        display: flex;
+        gap: 30px;
+        padding: 60px 0;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .left-contact {
+            flex: 1;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+
+            h3 {
+                font-family: 'Pacifico', cursive;
+                font-size: 2rem;
+                margin-bottom: 20px;
+                color: #333;
+            }
+
+            p {
+                color: #666;
+                margin-bottom: 30px;
+                line-height: 1.6;
+            }
+
+            .details {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+
+                .infos {
+                    display: flex;
+                    gap: 15px;
+                    align-items: flex-start;
+
+                    div:first-child {
+                        i {
+                            color: $my_yellow;
+                            font-size: 1.5rem;
+                            width: 40px;
+                            height: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: rgb(255, 247, 235);
+                            border-radius: 50%;
+                        }
+                    }
+
+                    div:last-child {
+                        h4 {
+                            font-family: 'Pacifico', cursive;
+                            font-size: 1.1rem;
+                            margin-bottom: 5px;
+                            color: #333;
+                            font-weight: 400;
+                        }
+
+                        p {
+                            color: #666;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right-contact {
+            flex: 2;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .form-row {
+                display: flex;
+                gap: 20px;
+
+                input {
+                    flex: 1;
+                }
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 15px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                font-size: 14px;
+                transition: border 0.3s;
+
+                &:focus {
+                    outline: none;
+                    border-color: $my_yellow;
+                }
+
+                &::placeholder {
+                    color: #999;
+                }
+            }
+
+            textarea {
+                min-height: 150px;
+                resize: vertical;
+            }
+
+            button {
+                background: $my_yellow;
+                color: white;
+                border: none;
+                padding: 15px 40px;
+                border-radius: 50px;
+                font-size: 16px;
+                cursor: pointer;
+                align-self: center;
+                transition: all 0.3s;
+
+                &:hover {
+                    background: darken($my_yellow, 10%);
+                    transform: translateY(-2px);
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
     }
 
+    @media (max-width: 992px) {
+        .contact-bottom {
+            flex-direction: column;
+            padding: 40px 20px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .contact-bottom {
+            .left-contact,
+            .right-contact {
+                padding: 30px 20px;
+            }
+
+            .right-contact .form-row {
+                flex-direction: column;
+            }
+        }
+    }
     @media (max-width: 768px) {
         .contact-mid {
             height: 400px;

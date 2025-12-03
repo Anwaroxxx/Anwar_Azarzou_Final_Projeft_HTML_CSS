@@ -37151,6 +37151,133 @@ img {
   height: 100%;
   border: 0;
 }
+.contact .contact-bottom {
+  display: flex;
+  gap: 30px;
+  padding: 60px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.contact .contact-bottom .left-contact {
+  flex: 1;
+  background: white;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.contact .contact-bottom .left-contact h3, .contact .contact-bottom .left-contact .h3 {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+.contact .contact-bottom .left-contact p {
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.contact .contact-bottom .left-contact .details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.contact .contact-bottom .left-contact .details .infos {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+.contact .contact-bottom .left-contact .details .infos div:first-child i {
+  color: rgb(255, 176, 59);
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 247, 235);
+  border-radius: 50%;
+}
+.contact .contact-bottom .left-contact .details .infos div:last-child h4, .contact .contact-bottom .left-contact .details .infos div:last-child .h4 {
+  font-family: "Pacifico", cursive;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 400;
+}
+.contact .contact-bottom .left-contact .details .infos div:last-child p {
+  color: #666;
+  margin: 0;
+}
+.contact .contact-bottom .right-contact {
+  flex: 2;
+  background: white;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact .contact-bottom .right-contact .form-row {
+  display: flex;
+  gap: 20px;
+}
+.contact .contact-bottom .right-contact .form-row input {
+  flex: 1;
+}
+.contact .contact-bottom .right-contact input,
+.contact .contact-bottom .right-contact textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border 0.3s;
+}
+.contact .contact-bottom .right-contact input:focus,
+.contact .contact-bottom .right-contact textarea:focus {
+  outline: none;
+  border-color: rgb(255, 176, 59);
+}
+.contact .contact-bottom .right-contact input::placeholder,
+.contact .contact-bottom .right-contact textarea::placeholder {
+  color: #999;
+}
+.contact .contact-bottom .right-contact textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+.contact .contact-bottom .right-contact button {
+  background: rgb(255, 176, 59);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center;
+  transition: all 0.3s;
+}
+.contact .contact-bottom .right-contact button:hover {
+  background: rgb(255, 155.443877551, 8);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 992px) {
+  .contact .contact-bottom {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .contact .contact-bottom .left-contact,
+  .contact .contact-bottom .right-contact {
+    padding: 30px 20px;
+  }
+  .contact .contact-bottom .right-contact .form-row {
+    flex-direction: column;
+  }
+}
 @media (max-width: 768px) {
   .contact .contact-mid {
     height: 400px;
