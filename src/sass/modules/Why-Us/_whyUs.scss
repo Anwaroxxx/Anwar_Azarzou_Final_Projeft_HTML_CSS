@@ -41,6 +41,7 @@
       height: 300px;
       padding: 25px;
       transition: 0.3s;
+
       h2 {
         color: $my_yellow;
         transition: 0.5s;
@@ -49,21 +50,26 @@
       &:hover h2 {
         color: white;
       }
-      .para-container{
-        @include MyFont(500,black,1);
+
+      .para-container {
+        @include MyFont(500, black, 1);
         font-family: "Pacifico";
         font-size: 24px;
         transition: 0.5s;
       }
-      .random-para{
+
+      .random-para {
         color: rgb(90, 90, 90);
         transition: 0.5s;
       }
+
       &:hover {
         background-color: $my_yellow;
         padding-bottom: 50px;
       }
-      &:hover .random-para , &:hover .para-container{
+
+      &:hover .random-para,
+      &:hover .para-container {
         color: white;
       }
     }

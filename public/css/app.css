@@ -12554,4 +12554,90 @@ nav .menu-icon {
   display: flex;
 }
 
+.specials {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: 30px;
+  flex-direction: column;
+}
+.specials .top-specials {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: 15px;
+  flex-direction: column;
+}
+.specials .top-specials a {
+  background-color: rgb(255, 247, 235);
+  color: rgb(255, 176, 59);
+  text-decoration: none;
+  padding: 7px 30px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: default;
+}
+.specials .top-specials h2, .specials .top-specials .h2 {
+  font-weight: 400;
+  color: black;
+  letter-spacing: 1;
+  font-family: "Pacifico";
+}
+.specials .top-specials h2 span, .specials .top-specials .h2 span {
+  color: rgb(255, 176, 59);
+}
+.specials .bottom-specials {
+  display: grid;
+  align-items: none;
+  justify-content: center;
+  gap: 30px;
+  grid-template-columns: 25% 1fr;
+  padding-left: 80px;
+  padding-right: 100px;
+  grid-template-rows: 250px;
+}
+.specials .bottom-specials .left-specials {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 80px;
+  flex-direction: column;
+  border-right: 2px solid rgb(219, 219, 219);
+}
+.specials .bottom-specials .left-specials .specials-rows {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: 15px;
+  cursor: pointer;
+}
+.specials .bottom-specials .left-specials .specials-rows:hover h4, .specials .bottom-specials .left-specials .specials-rows:hover .h4 {
+  color: rgb(255, 176, 59);
+}
+.specials .bottom-specials .left-specials .specials-rows h4, .specials .bottom-specials .left-specials .specials-rows .h4 {
+  font-size: 17px;
+  transition: 0.5s;
+}
+.specials .bottom-specials .right-specials {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: 30px;
+}
+.specials .bottom-specials .right-specials .text-left {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.specials .bottom-specials .right-specials .text-left h3, .specials .bottom-specials .right-specials .text-left .h3 {
+  font-weight: 100;
+  color: black;
+  letter-spacing: 1;
+  font-family: "Pacifico";
+}
+
 /*# sourceMappingURL=app.css.map */
