@@ -1,4 +1,4 @@
-/*importing bash ncostumize les vars*/
+//!importing bash ncostumize les vars
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 
@@ -7,7 +7,8 @@ $yellow: rgb(255, 176, 59);
 $myColors: ("yellow": $yellow);
 $theme-colors: map-merge($theme-colors, $myColors);
 
-/*Costumizing l position properties kamlin*/
+//*Costumizing l position properties kamlin
+
 @for $i from 1 through 500 {
     .top-#{$i} {
         top: #{$i}px !important;
@@ -22,7 +23,7 @@ $theme-colors: map-merge($theme-colors, $myColors);
         right: #{$i}px !important;
     }
 }
-/*Costumizing width w height*/
+//?Costumizing width w height
 @for $i from 1 through 500 {
     .w-#{$i} {
         width: #{$i}px !important;
@@ -33,6 +34,74 @@ $theme-colors: map-merge($theme-colors, $myColors);
         height: #{$i}px !important;
     }
 }
+
+//?padding w margin
+@for $i from 1 through 200 {
+    //!Padding
+    .p-#{$i} {
+        padding: #{$i}px !important;
+    }
+    
+    .pt-#{$i} {
+        padding-top: #{$i}px !important;
+    }
+    
+    .pb-#{$i} {
+        padding-bottom: #{$i}px !important;
+    }
+    
+    .pl-#{$i} {
+        padding-left: #{$i}px !important;
+    }
+    
+    .pr-#{$i} {
+        padding-right: #{$i}px !important;
+    }
+    
+    .px-#{$i} {
+        padding-left: #{$i}px !important;
+        padding-right: #{$i}px !important;
+    }
+    
+    .py-#{$i} {
+        padding-top: #{$i}px !important;
+        padding-bottom: #{$i}px !important;
+    }
+}
+
+//! Margin
+@for $i from 1 through 200 {
+    .m-#{$i} {
+        margin: #{$i}px !important;
+    }
+    
+    .mt-#{$i} {
+        margin-top: #{$i}px !important;
+    }
+    
+    .mb-#{$i} {
+        margin-bottom: #{$i}px !important;
+    }
+    
+    .ml-#{$i} {
+        margin-left: #{$i}px !important;
+    }
+    
+    .mr-#{$i} {
+        margin-right: #{$i}px !important;
+    }
+    
+    .mx-#{$i} {
+        margin-left: #{$i}px !important;
+        margin-right: #{$i}px !important;
+    }
+    
+    .my-#{$i} {
+        margin-top: #{$i}px !important;
+        margin-bottom: #{$i}px !important;
+    }
+}
+//~the other imports
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/carousel";
