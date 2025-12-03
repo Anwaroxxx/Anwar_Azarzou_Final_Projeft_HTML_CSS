@@ -37108,14 +37108,21 @@ img {
     font-size: 1rem;
   }
 }
-.contact-top {
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: 20px;
+  flex-direction: column;
+}
+.contact .contact-top {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
   flex-direction: column;
 }
-.contact-top a {
+.contact .contact-top a {
   background-color: rgb(255, 247, 235);
   color: rgb(255, 176, 59);
   text-decoration: none;
@@ -37125,14 +37132,29 @@ img {
   border-radius: 20px;
   cursor: default;
 }
-.contact-top h2, .contact-top .h2 {
+.contact .contact-top h2, .contact .contact-top .h2 {
   font-weight: 400;
   color: black;
   letter-spacing: 1;
   font-family: "Pacifico";
 }
-.contact-top h2 span, .contact-top .h2 span {
+.contact .contact-top h2 span, .contact .contact-top .h2 span {
   color: rgb(255, 176, 59);
+}
+.contact .contact-mid {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+.contact .contact-mid iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+@media (max-width: 768px) {
+  .contact .contact-mid {
+    height: 400px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

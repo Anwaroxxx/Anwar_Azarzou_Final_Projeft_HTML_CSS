@@ -1,4 +1,7 @@
-.contact-top{
+.contact {
+    @include MyDisplay(flex,center,none,20px);
+    flex-direction: column;
+    .contact-top {
         @include MyDisplay(flex, center, center, 20px);
         flex-direction: column;
 
@@ -22,3 +25,26 @@
             }
         }
     }
+
+    .contact-mid {
+        width: 100%;
+        height: 400px;
+        position: relative;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    }
+
+    .contact-bottom {
+        
+    }
+
+    @media (max-width: 768px) {
+        .contact-mid {
+            height: 400px;
+        }
+    }
+}
