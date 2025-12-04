@@ -36715,6 +36715,64 @@ nav .menu-icon {
   color: white;
 }
 
+@media (max-width: 769px) {
+  .why-us .top-why {
+    padding-top: 50px;
+  }
+  .why-us .top-why h2, .why-us .top-why .h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .why-us .bottom-why {
+    grid-template-columns: 1fr;
+    padding: 20px 30px;
+    row-gap: 15px;
+  }
+  .why-us .bottom-why .lil-containers {
+    height: auto;
+    min-height: 250px;
+    padding: 20px;
+  }
+  .why-us .bottom-why .lil-containers .para-container {
+    font-size: 20px;
+  }
+  .why-us .bottom-why .lil-containers .random-para {
+    font-size: 14px;
+  }
+}
+@media (max-width: 426px) {
+  .why-us .top-why {
+    padding-top: 40px;
+  }
+  .why-us .top-why a {
+    font-size: 12px;
+    padding: 6px 25px;
+  }
+  .why-us .top-why h2, .why-us .top-why .h2 {
+    font-size: 1.5rem;
+    padding: 0 15px;
+  }
+  .why-us .bottom-why {
+    padding: 20px 15px;
+    row-gap: 15px;
+  }
+  .why-us .bottom-why .lil-containers {
+    min-height: 220px;
+    padding: 20px 15px;
+  }
+  .why-us .bottom-why .lil-containers h2, .why-us .bottom-why .lil-containers .h2 {
+    font-size: 2.5rem;
+  }
+  .why-us .bottom-why .lil-containers .para-container {
+    font-size: 18px;
+  }
+  .why-us .bottom-why .lil-containers .random-para {
+    font-size: 13px;
+  }
+  .why-us .bottom-why .lil-containers:hover {
+    padding-bottom: 30px;
+  }
+}
 .menu {
   max-width: 1200px;
   margin: 0 auto;
