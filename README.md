@@ -49,8 +49,7 @@ cd Anwar_Azarzou_Final_Projeft_HTML_CSS
 ```
 2. Install Node.js
 
-Download Node.js from <a>nodejs.org</a>
-.
+Download Node.js from [nodejs.org](https://nodejs.org/).
 
 Check installation:
 
