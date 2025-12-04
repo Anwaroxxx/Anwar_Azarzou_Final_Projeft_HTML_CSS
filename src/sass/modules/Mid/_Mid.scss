@@ -4,15 +4,19 @@
   padding: 50px 80px;
   align-items: center;
   background-color: rgb(255, 250, 242);
+  
   .left {
     img {
-      width: 640px;
+      width: 100%;
+      max-width: 640px;
     }
   }
+  
   .right {
     display: flex;
     align-items: center;
     flex-direction: column;
+    
     .top-text {
       h3 {
         font-family: "Pacifico";
@@ -22,12 +26,73 @@
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
       }
     }
-    .mid-text div{
-        @include MyDisplay(flex,none,none,10px);
-        i{
-            color: $my_yellow;
-            font-size: 20px;
+    
+    .mid-text div {
+      @include MyDisplay(flex, none, none, 10px);
+      
+      i {
+        color: $my_yellow;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .mid {
+    grid-template-columns: 1fr;
+    padding: 40px 30px;
+    gap: 30px;
+    
+    .left {
+      text-align: center;
+      
+      img {
+        max-width: 500px;
+      }
+    }
+    
+    .right {
+      .top-text h3 {
+        font-size: 1.5rem;
+      }
+      
+      .mid-text div i {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .mid {
+    padding: 30px 15px;
+    gap: 20px;
+    
+    .left img {
+      max-width: 100%;
+    }
+    
+    .right {
+      .top-text h3 {
+        font-size: 1.2rem;
+      }
+      
+      .mid-text div {
+        gap: 8px;
+        
+        i {
+          font-size: 16px;
         }
+        
+        p {
+          font-size: 14px;
+        }
+      }
+      
+      .last-text p {
+        font-size: 14px;
+      }
     }
   }
 }
