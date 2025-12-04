@@ -106,8 +106,9 @@ nav {
 
 @media (max-width: 769px) {
   nav {
-    padding: 10px 30px;
-    top: 0;
+    height: 30px;
+    padding-top: 30px;
+    padding-bottom: 40px;
 
     .logo h1 {
       padding-left: 20px;
@@ -116,9 +117,9 @@ nav {
 
     .links {
       position: fixed;
-      top: 80px;
+      top: 69px;
       right: 0;
-      width: 250px;
+      width: 100vw;
       height: calc(100vh - 80px);
       background: $nav-bg;
       flex-direction: column;
@@ -187,8 +188,8 @@ nav {
 
 @media (max-width: 426px) {
   nav {
-    height: 55px;
-    padding-top: 80px;
+    height: 30px;
+    padding-top: 60px;
     padding-bottom: 40px;
 
     .logo h1 {
@@ -202,7 +203,6 @@ nav {
       height: 80vh;
       padding-top: 30px;
       gap: 15px;
-
       a {
         font-size: 13px;
       }

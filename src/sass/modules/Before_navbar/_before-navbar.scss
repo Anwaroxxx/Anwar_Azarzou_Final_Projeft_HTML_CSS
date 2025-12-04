@@ -87,10 +87,9 @@ html {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.8px);
     -webkit-backdrop-filter: blur(6.8px);
-
     .contact {
       gap: 20px;
-
+      display: none;
       div {
         gap: 10px;
 

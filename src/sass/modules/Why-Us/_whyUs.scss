@@ -21,7 +21,7 @@
     h2 {
       @include MyFont(400, black, 1);
       font-family: "Pacifico";
-
+      filter: brightness(50%);
       span {
         color: $my_yellow;
       }
@@ -91,7 +91,6 @@
       grid-template-columns: 1fr;
       padding: 20px 30px;
       row-gap: 15px;
-
       .lil-containers {
         height: auto;
         min-height: 250px;
