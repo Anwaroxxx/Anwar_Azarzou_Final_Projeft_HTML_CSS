@@ -113,5 +113,14 @@ Anwar_Azarzou_Final_Projeft_HTML_CSS/
 └── README.md
 ```
 
+### 🖥️ Website Previews
+
+#### Desktop View
+![Desktop View](public/design/desktopV.png)
+
+#### Mobile View
+![Mobile View](public/design/MobileV.png)
+
+
 
 
