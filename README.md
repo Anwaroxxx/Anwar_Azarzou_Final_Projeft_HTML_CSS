@@ -9,8 +9,6 @@
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/)
 
-**Repository:** [GitHub Link](https://github.com/Anwaroxxx/Anwar_Azarzou_Final_Projeft_HTML_CSS.git)  
-
 ---
 
 ## 🔹 Project Summary
