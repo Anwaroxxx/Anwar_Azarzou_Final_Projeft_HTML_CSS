@@ -37090,7 +37090,7 @@ nav .menu-icon {
   display: none;
 }
 .specials .right-specials img {
-  max-width: 350px;
+  width: 350px;
   margin-top: 20px;
 }
 .specials #spec1:checked ~ .bottom-specials .right-wrapper .spec1,
@@ -37113,6 +37113,16 @@ nav .menu-icon {
   font-weight: 700;
 }
 
+@media (max-width: 426px) {
+  .right-specials img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 769px) {
+  .right-specials img {
+    max-width: 100%;
+  }
+}
 #partyCarousel {
   position: relative;
   background-image: url(/public/images/events-bg.jpg);

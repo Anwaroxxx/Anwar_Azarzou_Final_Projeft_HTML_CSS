@@ -61,7 +61,7 @@
         display: none;
 
         img {
-            max-width: 350px;
+            width: 350px;
             margin-top: 20px;
         }
     }
@@ -80,5 +80,17 @@
     #spec5:checked~.bottom-specials .left-specials label[for="spec5"] h4 {
         color: $my_yellow;
         font-weight: 700;
+    }
+}
+
+@media (max-width: 426px) {
+    .right-specials img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 769px) {
+    .right-specials img {
+        max-width: 100%;
     }
 }
