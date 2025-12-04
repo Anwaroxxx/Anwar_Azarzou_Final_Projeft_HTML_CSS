@@ -3,9 +3,24 @@
     @include MyDisplay(flex, center, none, 30px);
     flex-direction: column;
 
+    @media (max-width: 768px) {
+        padding-bottom: 60px;
+        gap: 25px;
+    }
+
+    @media (max-width: 426px) {
+        padding-bottom: 40px;
+        gap: 20px;
+    }
+
     .top-specials {
         @include MyDisplay(flex, center, none, 15px);
         flex-direction: column;
+
+        @media (max-width: 426px) {
+            gap: 12px;
+            padding: 0 15px;
+        }
 
         a {
             background-color: rgb(255, 247, 235);
@@ -16,11 +31,25 @@
             font-weight: 600;
             border-radius: 20px;
             cursor: default;
+
+            @media (max-width: 426px) {
+                padding: 6px 20px;
+                font-size: 12px;
+            }
         }
 
         h2 {
             @include MyFont(400, black, 1);
             font-family: "Pacifico";
+
+            @media (max-width: 768px) {
+                font-size: 32px;
+                text-align: center;
+            }
+
+            @media (max-width: 426px) {
+                font-size: 24px;
+            }
 
             span {
                 color: $my_yellow;
@@ -35,22 +64,74 @@
         padding-right: 100px;
         grid-template-rows: 250px;
 
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            padding-left: 40px;
+            padding-right: 40px;
+            gap: 40px;
+        }
+
+        @media (max-width: 426px) {
+            padding-left: 20px;
+            padding-right: 20px;
+            gap: 30px;
+        }
+
         .left-specials {
             @include MyDisplay(flex, start, center, 10px);
             padding-left: 80px;
             flex-direction: column;
             border-right: 2px solid rgb(219, 219, 219);
 
+            @media (max-width: 768px) {
+                padding-left: 0;
+                border-right: none;
+                border-bottom: 2px solid rgb(219, 219, 219);
+                padding-bottom: 20px;
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            @media (max-width: 426px) {
+                flex-direction: column;
+                gap: 12px;
+                padding-bottom: 15px;
+            }
+
             .specials-rows {
                 @include MyDisplay(flex, center, none, 15px);
                 cursor: pointer;
 
+                @media (max-width: 426px) {
+                    gap: 10px;
+                }
+
                 &:hover h4 {
                     color: $my_yellow;
                 }
+
                 h4 {
                     font-size: 17px;
-                    transition: 0.5s
+                    transition: 0.5s;
+
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                    }
+
+                    @media (max-width: 426px) {
+                        font-size: 15px;
+                    }
+                }
+
+                img {
+                    @media (max-width: 426px) {
+                        width: 35px;
+                        height: auto;
+                    }
                 }
             }
         }
@@ -58,16 +139,75 @@
         .right-specials {
             @include MyDisplay(flex, center, none, 30px);
 
+            @media (max-width: 768px) {
+                flex-direction: column;
+                gap: 25px;
+            }
+
+            @media (max-width: 426px) {
+                gap: 20px;
+            }
+
+            img {
+                @media (max-width: 768px) {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                @media (max-width: 426px) {
+                    max-width: 100%;
+                }
+            }
+
             .text-left {
                 @include MyDisplay(flex, start, center, 10px);
                 flex-direction: column;
 
+                @media (max-width: 768px) {
+                    align-items: center;
+                    text-align: center;
+                }
+
+                @media (max-width: 426px) {
+                    gap: 8px;
+                }
+
                 h3 {
                     @include MyFont(100, black, 1);
                     font-family: "Pacifico";
+
+                    @media (max-width: 768px) {
+                        font-size: 28px;
+                    }
+
+                    @media (max-width: 426px) {
+                        font-size: 22px;
+                    }
+                }
+
+                p {
+                    @media (max-width: 768px) {
+                        font-size: 14px;
+                    }
+
+                    @media (max-width: 426px) {
+                        font-size: 13px;
+                        line-height: 1.5;
+                    }
+                }
+
+                ul {
+                    @media (max-width: 768px) {
+                        text-align: left;
+                        padding-left: 20px;
+                    }
+
+                    @media (max-width: 426px) {
+                        font-size: 13px;
+                        padding-left: 15px;
+                    }
                 }
             }
-
         }
     }
 }

@@ -187,8 +187,9 @@ nav {
 
 @media (max-width: 426px) {
   nav {
-    height: 150px;
-    padding: 0px 15px;
+    height: 55px;
+    padding-top: 80px;
+    padding-bottom: 40px;
 
     .logo h1 {
       font-size: 22px;
@@ -197,7 +198,7 @@ nav {
 
     .links {
       width: 100%;
-      top: 70px;
+      top: 45px;
       height: 80vh;
       padding-top: 30px;
       gap: 15px;
