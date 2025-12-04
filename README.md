@@ -83,6 +83,7 @@ or double-click the file.
 
 📁 Project Structure
 
+```text
 Anwar_Azarzou_Final_Projeft_HTML_CSS/
 ├── node_modules/
 ├── public/
@@ -110,6 +111,7 @@ Anwar_Azarzou_Final_Projeft_HTML_CSS/
 ├── package.json
 ├── package-lock.json
 └── README.md
+```
 
 
 
