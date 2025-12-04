@@ -21,7 +21,6 @@
     h2 {
       @include MyFont(400, black, 1);
       font-family: "Pacifico";
-      filter: brightness(50%);
       span {
         color: $my_yellow;
       }
